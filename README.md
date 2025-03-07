@@ -5,7 +5,10 @@
 Access the key files for this project:
 - 📓 **[Jupyter Notebook](./fmcg.ipynb)**: Core data analysis and machine learning workflows.
 - 📑 **[Data Dictionary](./FMCG_data_dictionary.pdf)**: Detailed column descriptions of the dataset.
-- 🛠️ **[SQL QUERY](./cleaned_fmcg_data_sql_query.sql)**: 
+- 🛠️ **[SQL QUERY](./cleaned_fmcg_data_sql_query.sql)**:
+- 🌐 **[Tableau Dashboard](https://public.tableau.com/views/online_retail_dashboard_17413829628300/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**.
+
+  
 ## 📊 Comprehensive Overview
 
 This repository provides a detailed analytical framework and predictive modeling aimed at optimizing supply chain operations for a leading FMCG company. The focus is on instant noodles, addressing warehouse logistics, refill requests, transportation bottlenecks, competitor impact, and other operational factors essential for strategic decision-making.
