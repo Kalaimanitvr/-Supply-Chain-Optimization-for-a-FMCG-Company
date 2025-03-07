@@ -1,6 +1,11 @@
 # 🔄 FMCG Supply Chain Optimization Analysis
 ##      Tools used: Python | SQL | Tableau |  
 
+## 🌐 Quick Access Links
+Access the key files for this project:
+- 📓 **[Jupyter Notebook](./fmcg.ipynb)**: Core data analysis and machine learning workflows.
+- 📑 **[Data Dictionary](./FMCG_data_dictionary.pdf)**: Detailed column descriptions of the dataset.
+- 🛠️ **[SQL QUERY](./cleaned_fmcg_data_sql_query.sql)**: 
 ## 📊 Comprehensive Overview
 
 This repository provides a detailed analytical framework and predictive modeling aimed at optimizing supply chain operations for a leading FMCG company. The focus is on instant noodles, addressing warehouse logistics, refill requests, transportation bottlenecks, competitor impact, and other operational factors essential for strategic decision-making.
