@@ -5,8 +5,8 @@
 Access the key files for this project:
 - 📓 **[Jupyter Notebook](./fmcg.ipynb)**: Core data analysis and machine learning workflows.
 - 📑 **[Data Dictionary](./FMCG_data_dictionary.pdf)**: Detailed column descriptions of the dataset.
-- 🛠️ **[SQL QUERY](./cleaned_fmcg_data_sql_query.sql)**:
-- 🌐 **[Tableau Dashboard](https://public.tableau.com/views/online_retail_dashboard_17413829628300/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**.
+- 🛠️ **[SQL QUERY](./cleaned_fmcg_data_sql_query.sql)**
+- 🌐 **[Tableau Dashboard](https://public.tableau.com/views/fmcgdashboard/Dashboard3?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**.
 
   
 ## 📊 Comprehensive Overview
