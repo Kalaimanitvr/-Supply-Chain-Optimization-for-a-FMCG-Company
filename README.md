@@ -38,7 +38,7 @@ Access the key files for this project:
 *Highlights strong correlations, notably a 0.99 correlation between storage issues reported and product weight tonnage, pinpointing key predictors.*
 
 #### Linear Regression Analysis
-![Linear Regression Plot](2025-03-08 08_58_19-fmcg — Mozilla Firefox.png)
+![Linear Regression Plot](2025-03-08%2008_58_19-fmcg%20—%20Mozilla Firefox.png)
 *Demonstrates the predictive accuracy of the regression model with an R² of 97.75%, validating the model's effectiveness in forecasting warehouse stock weights.*
 
 ## Tableau Dashboard
