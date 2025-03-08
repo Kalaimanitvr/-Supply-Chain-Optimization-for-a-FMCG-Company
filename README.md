@@ -21,24 +21,24 @@ Access the key files for this project:
 - **Competitor Analysis**: Average presence of 3.1 competitors per market, notably affecting performance.
 
 ### Visualizations
+#### Stockout Risk by Warehouse Capacity
+![Stockout Risk by Capacity](stockout_risk_by_capacity.png)
+*Shows higher potential stockout risks in larger capacity warehouses, with 593 instances noted at mid capacity.*
+
+#### Stockout Risk Distribution by Location Type
+![Stockout Risk by Location](stockout_risk_by_location_type.png)
+*Urban locations show a significant risk with 1307 potential stockout instances, in contrast to 79 in rural areas.*
+
+#### Transportation Issues Across Zones
+![Transport Issues by Zone](stockout_risk_by_zone.png)
+*Identifies the North as having the highest share of transport issues at 41.51% of total.*
+
 #### Correlation Matrix 
 ![Correlation Matrix](correlation_matrix_heatmap.png)
 *Highlights strong correlations, notably a 0.99 correlation between storage issues reported and product weight tonnage, pinpointing key predictors.*
 
-#### Stockout Risk by Warehouse Capacity
-![Stockout Risk by Capacity](images/stockout_risk_by_capacity.png)
-*Shows higher potential stockout risks in larger capacity warehouses, with 593 instances noted at mid capacity.*
-
-#### Stockout Risk Distribution by Location Type
-![Stockout Risk by Location](images/stockout_risk_by_location_type.png)
-*Urban locations show a significant risk with 1307 potential stockout instances, in contrast to 79 in rural areas.*
-
-#### Transportation Issues Across Zones
-![Transport Issues by Zone](images/stockout_risk_by_zone.png)
-*Identifies the North as having the highest share of transport issues at 41.51% of total.*
-
 #### Linear Regression Analysis
-![Linear Regression Plot](images/linear_regression_plot.png)
+![Linear Regression Plot](linear_regression_plot.png)
 *Demonstrates the predictive accuracy of the regression model with an R² of 97.75%, validating the model's effectiveness in forecasting warehouse stock weights.*
 
 ## Tableau Dashboard
