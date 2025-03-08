@@ -9,58 +9,59 @@ Access the key files for this project:
 - 🌐 **[Tableau Dashboard](https://public.tableau.com/views/fmcgdashboard/Dashboard3?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**.
 
   
-## 📊 Comprehensive Overview
+## Dataset Information
+- **Total Warehouses**: 25,000
+- **Zones Covered**: North (41.1%), West (31.7%), South (25.4%), East (1.7%).
+- **Location Types**: Predominantly Rural (91.8%) versus Urban (8.2%).
 
-This repository provides a detailed analytical framework and predictive modeling aimed at optimizing supply chain operations for a leading FMCG company. The focus is on instant noodles, addressing warehouse logistics, refill requests, transportation bottlenecks, competitor impact, and other operational factors essential for strategic decision-making.
+## Exploratory Data Analysis (EDA)
+### Key Observations
+- **Refill Requests**: Averages at 4.09 per warehouse, typically ranging from 3-5 in the last three months.
+- **Transport Issues**: More prevalent in urban areas with an average of 0.81 issues per year, compared to 0.77 in rural settings.
+- **Competitor Analysis**: Average presence of 3.1 competitors per market, notably affecting performance.
 
-## 🗃️ Detailed Dataset Information
+### Visualizations
+#### Stockout Risk by Warehouse Capacity
+![Stockout Risk by Capacity](stockout_risk_by_capacity.png)
+*Shows higher potential stockout risks in larger capacity warehouses, with 593 instances noted at mid capacity.*
 
-**Dataset Scope:**
-- **Total Warehouses:** 25,000
-- **Zones Covered:** North (41.1%), West (31.7%), South (25.4%), East (1.7%)
-- **Location Types:** Rural (91.8%), Urban (8.2%)
+#### Stockout Risk Distribution by Location Type
+![Stockout Risk by Location](stockout_risk_by_location_type.png)
+*Urban locations show a significant risk with 1307 potential stockout instances, in contrast to 79 in rural areas.*
 
+#### Transportation Issues Across Zones
+![Transport Issues by Zone](stockout_risk_by_zone.png)
+*Identifies the North as having the highest share of transport issues at 41.51% of total.*
 
-### Data Preparation and Treatment:
-- Dropped `wh_est_year` due to 47.5% missing values.
-- Median imputation for skewed numeric columns.
-- Mode imputation for categorical variables.
-- Outliers managed using Interquartile Range (IQR) and Winsorization.
+#### Correlation Matrix 
+![Correlation Matrix](correlation_matrix_heatmap.png)
+*Highlights strong correlations, notably a 0.99 correlation between storage issues reported and product weight tonnage, pinpointing key predictors.*
 
-## 🔍 Exploratory Data Analysis (EDA)
+#### Linear Regression Analysis
+![Linear Regression Plot](linear_regression.png)
+*Demonstrates the predictive accuracy of the regression model with an R² of 97.75%, validating the model's effectiveness in forecasting warehouse stock weights.*
 
-### Key Observations:
-- **Refill Requests:** Average of 4.09 per warehouse, mainly between 3-5 in the last 3 months.
-- **Transport Issues:** Higher issues in urban areas (0.81 per year) than in rural (0.77).
-- **Competitor Analysis:** Average presence of 3.1 competitors per market, affecting performance.
-- **Workforce Analysis:** Average of 29 employees per warehouse, variability affects productivity.
+## Tableau Dashboard
+Access the interactive Tableau dashboard for a dynamic exploration of data visualizations:
+[View Dashboard](https://tableau.public/link/to/dashboard)
 
-## 🤖 Machine Learning and Predictive Analytics
+## Predictive Analytics
+### Linear Regression Model
+- **Objective**: Predict `product_wg_ton` for enhanced inventory management and logistical efficiency.
+- **Key Metrics**:
+  - R² Score: 97.75%
+  - RMSE: 0.1496
+  - Mean Absolute Error: 0.1103
 
-### Linear Regression Model:
-- **Objective:** Predict `product_wg_ton` to enhance inventory management and logistical efficiency.
-- **Performance:**
-  - **R² Score:** 97.75%
-  - **RMSE:** 0.1496
-  - **Mean Absolute Error:** 0.1103
-- **Influential Features:**
-  - `storage_issue_reported_l3m`: Very high correlation (0.99)
-  - `wh_breakdown_l3m`: Moderate correlation (0.34)
-  - Negative correlation with government certifications (-0.20)
+### Influential Features
+- **High Correlation**: Reported storage issues (0.99).
+- **Moderate Impact**: Warehouse breakdowns (0.34).
+- **Negative Impact**: Government certifications (-0.20).
 
-## 📈 Advanced Visualization Techniques
+## Recommendations
+- **Inventory Management**: Concentrate on warehouses with frequent refill requests to prevent stockouts.
+- **Route Optimization**: Target route optimizations in urban areas where transportation issues are frequent.
+- **Infrastructure Investment**: Upgrade storage infrastructure in warehouses identified as high-impact based on the analysis.
 
-- **Heatmaps:** Reveal feature correlations and multicollinearity.
-- **Boxplots:** Detect outliers.
-- **Scatterplots:** Assess model predictions versus actuals.
-
-## 💡 Actionable Recommendations
-
-- **Inventory Management:** Review warehouses with high refill frequency to prevent stockouts.
-- **Route Optimization:** Implement optimizations, especially in urban locations with transportation issues.
-- **Infrastructure Investment:** Upgrade storage infrastructure in high-impact warehouses.
-
-## 🛠️ Project Reproducibility
-## 🏁 Conclusion
-- This analysis offers strategic insights that empower the company to optimize operations, reduce bottlenecks, and enhance overall supply chain efficiency.
-  For a full analysis, visuals, and insights, refer to the attached Python notebook and Tableau dashboards provided in this repository.
+## Conclusion
+The project provides a comprehensive analytical framework and actionable insights that empower the company to optimize operations, reduce bottlenecks, and enhance overall supply chain efficiency.
