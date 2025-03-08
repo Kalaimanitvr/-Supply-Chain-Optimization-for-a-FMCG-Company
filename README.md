@@ -21,8 +21,8 @@ Access the key files for this project:
 - **Competitor Analysis**: Average presence of 3.1 competitors per market, notably affecting performance.
 
 ### Visualizations
-#### Correlation Matrix
-![Correlation Matrix](images/correlation_matrix_heatmap.png)
+#### Correlation Matrix 
+![Correlation Matrix](images/[correlation_matrix_heatmap.png](https://github.com/Kalaimanitvr/-Supply-Chain-Optimization-for-a-FMCG-Company/blob/289b55da6640ccf85c7343bd68adaf42a2cf9088/correlation_matrix_heatmap.png))
 *Highlights strong correlations, notably a 0.99 correlation between storage issues reported and product weight tonnage, pinpointing key predictors.*
 
 #### Stockout Risk by Warehouse Capacity
